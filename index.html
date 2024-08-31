@@ -7,6 +7,68 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="page-container">
+
+        <div class="image-section">
+            <div class="logo-section">
+                <img src="./assets/odin-lined.png" alt="Odin illustration logo">
+                <p>ODIN</p>
+            </div>
+            <p class="credits">
+                Photo by <a href="https://unsplash.com/@alstra?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Patrik Storm (Alstra Pictures)</a> on <a href="https://unsplash.com/photos/a-car-with-its-lights-on-htExeBPrVq8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+        <div class="form-section">
+            <div>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="italic">now</span> to get started.</p>
+                <p>You <span class="italic">know</span> you want to.</p>
+            </div>
+            <div class="form">
+                <p>Let’s do this!</p>
+                <form action="https://www.httpbin.org/post" method="post" id="form">
+                    <dive class="name">
+                        <div class="user-first-name-container">
+                            <label for="user-first-name">FIRST NAME</label>
+                            <input type="text" id="user-first-name" name="user-first-name" required minlength="5" maxlength="10">
+                            <div class="first-name-error-message"></div>
+                        </div>
+                        <div class="user-last-name-container">
+                            <label for="user-last-name">LAST NAME</label>
+                            <input type="text" id="user-last-name" name="user-last-name" required minlength="5" maxlength="10">
+                            <div class="last-name-error-message"></div>
+                        </div>
+                    </dive>
+                    <div class="email">
+                        <div class="user-email-container">
+                            <label for="user-email">EMAIL</label>
+                            <input type="email" id="user-email" name="user-email" required>
+                        </div>
+                        <div class="user-phone-number-container">
+                            <label for="user-phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="user-phone-number" name="user-phone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                            <div class="phone-number-error-message"></div>
+                        </div>
+                    </div>
+                    <div class="password">
+                        <div class="user-password-container">
+                            <label for="user-password">PASSWORD</label>
+                            <input type="password" id="user-password" name="user-password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" min="5" max="10">
+                            <div class="user-password-error-message"></div>
+                        </div>
+                        <div class="user-confirm-password-container">
+                            <label for="user-confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="user-confirm-password" name="user-confirm-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" min="5" max="10">
+                            <div class="user-confirm-password-error-message"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="call-to-action">
+                <button type="submit" form="form">Create Account</button>
+                <p>Already have an account? <a href="https://www.example.com">Log in</a></p>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
