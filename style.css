@@ -1,0 +1,60 @@
+/* Adding global styles, and setting project reset, fonts, variables */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #f8f9fa;
+    --clr-secondary: #E7042D;
+    --clr-ternary: #0059D4;
+    --clr-shade-1: #FFFFFF;
+    --clr-shade-2: #ced4da;
+    
+    --fs-1: 1rem;
+    --fs-2: 1.618rem;
+    --fs-3: 2.618rem;
+    --fs-4: 4.236rem;
+    --fs-5: 6.854rem;
+    --fs-small: 0.618rem;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+@font-face {
+    font-family: 'abelregular';
+    src: url('./fonts/abel-regular-webfont.woff2') format('woff2'),
+         url('./fonts/abel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nippobold';
+    src: url('./fonts/nippo-bold-webfont.woff2') format('woff2'),
+         url('./fonts/nippo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nippomedium';
+    src: url('./fonts/nippo-medium-webfont.woff2') format('woff2'),
+         url('./fonts/nippo-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nipporegular';
+    src: url('./fonts/nippo-regular-webfont.woff2') format('woff2'),
+         url('./fonts/nippo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
