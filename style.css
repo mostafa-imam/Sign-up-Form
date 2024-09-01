@@ -4,20 +4,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 :root {
     --clr-primary: #f8f9fa;
-    --clr-secondary: #b900224b;
-    --clr-ternary: #0059D4;
+    --clr-secondary: #C00231;
+    --clr-ternary: #003ca3;
     --clr-shade-1: #FFFFFF;
     --clr-shade-2: #ced4da;
+    --clr-shade-3: #0052e0;
     
     --fs-1: 1rem;
     --fs-2: 1.618rem;
     --fs-3: 2.618rem;
     --fs-4: 4.236rem;
     --fs-5: 6.854rem;
+    --fs-6: 11.089rem;
     --fs-small: 0.618rem;
 }
 
@@ -67,8 +70,8 @@ input {
 
 /* left section styles */
 .image-section {
-    background-image: url(./assets/patrik-storm-alstra-pictures-LLLwP0OrBDE.jpg);
-    background-size: auto 100%;
+    background-image: url(./assets/bruno-thethe-Evp4iNF3DHQ-unsplash.jpg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
     width: 33.33vw;
@@ -76,7 +79,7 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: var(--clr-shade-2);
+    color: var(--clr-primary);
 }
 
 .logo-section {
@@ -108,4 +111,129 @@ input {
 
 .credits > a {
     color: var(--clr-shade-2);
+}
+
+/* right section styles */
+
+.form-section {
+    padding-top: var(--fs-4);
+    background-color: var(--clr-primary);
+    width: calc(100vw - 33.33vw);
+    font-family: 'nipporegular', Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-section > div:nth-child(1),
+.form,
+.call-to-action {
+    padding-left: var(--fs-4);
+}
+
+.form-section > div:nth-child(1) {
+    font-size: var(--fs-2);
+    width: min(75ch, 70%);
+}
+
+.form-section > div:nth-child(1) > p:first-child {
+    margin-bottom: var(--fs-3);
+}
+
+.form-section > div:nth-child(1) > p:last-child {
+    margin-bottom: var(--fs-4);
+}
+
+span.italic {
+    font-style: italic;
+}
+
+.form {
+    box-shadow:  10px 10px 15px #bebebe,
+                -1px -1px 10px #bebebe;
+    padding-top: var(--fs-2);
+    padding-bottom: var(--fs-2);
+    background-color: var(--clr-shade-1);
+}
+
+.form > p {
+    font-size: var(--fs-2);
+    margin-bottom: var(--fs-2);
+}
+
+.name,
+.email,
+.password {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--fs-4);
+    margin-bottom: var(--fs-2);
+}
+
+.user-first-name-container,
+.user-last-name-container,
+.user-email-container,
+.user-phone-number-container,
+.user-password-container,
+.user-confirm-password-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.call-to-action {
+    padding-top: var(--fs-4);
+    font-size: var(--fs-2);
+}
+
+.call-to-action > button {
+    margin-bottom: var(--fs-3);
+    padding: var(--fs-1) var(--fs-4);
+    background-color: var(--clr-ternary);
+    color: var(--clr-shade-1);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.call-to-action > button:hover {
+    background-color: var(--clr-shade-3);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.call-to-action > p > a {
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+
+.call-to-action > p > a:hover {
+    text-decoration: none;
+    color: var(--clr-shade-3);
+}
+
+/* input styles */
+
+input {
+    border: 1px solid var(--clr-shade-2);
+    line-height: var(--fs-3);
+    border-radius: 5px;
+    font-size: var(--fs-2);
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid var(--clr-shade-3);
+    box-shadow: 0px 0px 10px var(--clr-shade-2);
+}
+
+.password > div > input:invalid {
+    border: 1px solid var(--clr-secondary);
+}
+
+.password > div.user-confirm-password-container > input:invalid + div::after {
+    content: "* Passwords do not match";
+    font-size: var(--fs-1);
+    color: var(--clr-secondary);
+}
+
+.user-password-container,
+.user-confirm-password-container {
+    height: 6vh;
 }
