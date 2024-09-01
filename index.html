@@ -29,13 +29,11 @@
                     <dive class="name">
                         <div class="user-first-name-container">
                             <label for="user-first-name">FIRST NAME</label>
-                            <input type="text" id="user-first-name" name="user-first-name" required minlength="5" maxlength="10">
-                            <div class="first-name-error-message"></div>
+                            <input type="text" id="user-first-name" name="user-first-name" required minlength="4" maxlength="10">
                         </div>
                         <div class="user-last-name-container">
                             <label for="user-last-name">LAST NAME</label>
-                            <input type="text" id="user-last-name" name="user-last-name" required minlength="5" maxlength="10">
-                            <div class="last-name-error-message"></div>
+                            <input type="text" id="user-last-name" name="user-last-name" required minlength="4" maxlength="10">
                         </div>
                     </dive>
                     <div class="email">
@@ -45,14 +43,14 @@
                         </div>
                         <div class="user-phone-number-container">
                             <label for="user-phone-number">PHONE NUMBER</label>
-                            <input type="tel" id="user-phone-number" name="user-phone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                            <input type="tel" id="user-phone-number" name="user-phone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx">
                             <div class="phone-number-error-message"></div>
                         </div>
                     </div>
                     <div class="password">
                         <div class="user-password-container">
                             <label for="user-password">PASSWORD</label>
-                            <input type="password" id="user-password" name="user-password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" min="5" max="10">
+                            <input type="password" id="user-password" name="user-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" min="5" max="10">
                             <div class="user-password-error-message"></div>
                         </div>
                         <div class="user-confirm-password-container">
