@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 :root {
@@ -236,4 +235,96 @@ input:focus {
 .user-password-container,
 .user-confirm-password-container {
     height: 6vh;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+
+    :root {
+        --fs-1: 1rem;
+        --fs-2: 1.333rem;
+        --fs-3: 1.777rem;
+        --fs-4: 2.369rem;
+        --fs-5: 3.157rem;
+        --fs-small: 0.75rem;
+    }
+    
+    .page-container {
+        background: url(./assets/bruno-thethe-Evp4iNF3DHQ-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-section {
+        height: 10vh;
+        background-image: none;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.712);
+    }
+
+    .credits {
+        display: none
+    }
+
+    .form-section {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.712);
+        height: 90vh;
+    }
+
+    .form-section > div:first-child {
+        display: none
+    }
+
+    .name,
+    .email,
+    .password {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin-bottom: 0px;
+    }
+
+    .user-first-name-container,
+    .user-last-name-container,
+    .user-email-container,
+    .user-phone-number-container,
+    .user-password-container,
+    .user-confirm-password-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: var(--fs-2);
+    }
+    
+    .form-section > div:nth-child(1),
+    .form,
+    .call-to-action {
+        padding-left: 0px;
+    }
+
+    .form {
+        box-shadow:  none;
+        padding-top: var(--fs-2);
+        padding-bottom: var(--fs-2);
+        background-color: transparent;
+        color: white;
+    }
+
+    .form > p {
+        text-align: center;
+    }
+
+    .call-to-action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
 }
